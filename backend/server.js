@@ -116,10 +116,7 @@ io.on('connection', (socket) => {
                     userId: socketUserMap[socket.id]?.id,
                 });
 
-                // socket.emit(ACTIONS.REMOVE_PEER, {
-                //     peerId: clientId,
-                //     userId: socketUserMap[clientId]?.id,
-                // });
+              
             });
             socket.leave(roomId);
         });
